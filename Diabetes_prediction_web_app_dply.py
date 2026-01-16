@@ -8,8 +8,18 @@ Created on Tue Dec  9 11:44:25 2025
 import numpy as np
 import pickle
 import streamlit as st
+import os
 
-loaded_model = pickle.load(open('trained_model.sav','rb'))
+# Get the folder where this Python file is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Build the full path to the model file
+MODEL_PATH = os.path.join(BASE_DIR, "trained_model.sav")
+
+# Load the model
+with open(MODEL_PATH, "rb") as file:
+    loaded_model = pickle.load(file)
+
 
 # Prediction function
 
@@ -33,6 +43,26 @@ def main():
     
     # streamlit interface
     st.title("Diabetes Prediction Web App")
+    
+    # FEATURE EXPLANATIONS 
+
+
+    FEATURE_HELP = {
+        "Pregnancies": "Number of times the person has been pregnant.",
+        "Glucose": "Blood sugar level (plasma glucose). Higher can increase diabetes risk.",
+        "BloodPressure": "Diastolic blood pressure (mm Hg).",
+        "SkinThickness": "Triceps skin fold thickness (mm). A body fat indicator.",
+        "Insulin": "2-hour serum insulin (mu U/ml).",
+        "BMI": "Body Mass Index (weight/height²).",
+        "DiabetesPedigreeFunction": "Family history score (genetic likelihood).",
+        "Age": "Age in years. Risk generally increases with age."
+    }
+
+    with st.expander("ℹ️ What do these inputs mean? (Click to open)"):
+        st.write("Each field below is a model **feature** (input). Here’s what they mean:")
+        for k, v in FEATURE_HELP.items():
+            st.markdown(f"- **{k}**: {v}")
+
     
     # Input data from users
     
