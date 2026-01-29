@@ -113,17 +113,6 @@ Evaluation focused on **generalization and reliability**, not just accuracy:
 - Accepts real-time patient inputs  
 - Easily deployable with **Streamlit or Flask**
 
-### Example Input
-```python
-input_data = (5, 166, 72, 19, 175, 25.8, 0.587, 51)
-
-Output
-
-0 → Non-Diabetic
-
-1 → Diabetic
-
-
 ### 🧠 Key Skills Demonstrated
 
 ✔ Healthcare data preprocessing
@@ -147,7 +136,7 @@ Expanded dataset & external validation
 
 Healthcare Data Scientist & Machine Learning Engineer
 
-I build end-to-end machine learning systems for healthcare problems — from data cleaning and modeling to evaluation and deployment — with a strong focus on accuracy, interpretability, and patient impact.
+I build end-to-end machine learning systems for healthcare problems; from data cleaning and modeling to evaluation and deployment, with a strong focus on accuracy, interpretability, and patient impact.
 
 📬 Open to:
 
@@ -156,4 +145,5 @@ Entry-level / junior ML roles
 Healthcare data science opportunities
 
 Research & product collaborations
+
 
