@@ -124,4 +124,36 @@ Output
 1 → Diabetic
 
 
+### 🧠 Key Skills Demonstrated
+
+✔ Healthcare data preprocessing
+✔ Handling class imbalance (SMOTE)
+✔ Model evaluation beyond accuracy
+✔ ML pipeline design
+✔ Deployment-ready modeling
+✔ Responsible AI mindset
+
+### Future Enhancements
+
+Hyperparameter tuning & model comparison
+
+Feature importance & explainability (SHAP)
+
+Web-based clinical screening tool
+
+Expanded dataset & external validation
+
+### 👩‍⚕️ About the Author
+
+Healthcare Data Scientist & Machine Learning Engineer
+
+I build end-to-end machine learning systems for healthcare problems — from data cleaning and modeling to evaluation and deployment — with a strong focus on accuracy, interpretability, and patient impact.
+
+📬 Open to:
+
+Entry-level / junior ML roles
+
+Healthcare data science opportunities
+
+Research & product collaborations
 
